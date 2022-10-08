@@ -15,8 +15,8 @@
     <header>
         <img class="header__logo" src="img/logo.svg">
         <div class="header__controls">
-            <a href="#contacts">Контакты</a>
-            <button>Заказать</button>
+            <a href="#form">Контакты</a>
+            <button type="button">Заказать</button>
         </div>
     </header>
     <section class="about">
@@ -62,7 +62,9 @@
         <div class="feature__border"></div>
         <div class="feature__feedback">
             <div class="feature__feedback-left">
-                <h2 class="feature__title-left">Нам доверяет <br> 5000+   счастливых клиентов</h2>
+                <h2 class="feature__title-left">Нам доверяет 
+                    <br> 
+                    <div class="features__clients-count">5000+</div> счастливых клиентов</h2>
                 <p class="feature__paragraph">Мы помогли тысячам людей перейти на зеленую энергию. <br> После заказа мы позаботимся обо всем: доставка панелей, проект, установка, помощь в использовании</p>
             </div>
             <div class="feature__feedback-right">
@@ -100,7 +102,7 @@
             </div>
         </div>
     </section>
-    <section class="form">
+    <section class="form" id = "form">
         <div class="form__container">
             <h1>Оставьте свои контакты</h1>
             <p>Поможем подобрать модель. <br> Выбрать удобный вариант доставки и установки. <br> Гарантия возврата денег. </p>
@@ -124,7 +126,7 @@
                         <option value="10-30">10 000₽ – 30 000₽</option>
                         <option value="30-60">30 000₽ – 60 000₽</option>
                         <option value="60-100">60 000₽ – 100 000₽</option>
-                        <option value="100+">100 000₽</option>
+                        <option value="other">Другое</option>
                     </select>
                 </div>
                 <button class="form__submit" type="submit">Отправить заявку</button>
@@ -160,5 +162,6 @@
         </div>
     </footer>
     <script src="js/canvas.js"></script>
+    <script src="js/animations.js"></script>
 </body>
 </html>
